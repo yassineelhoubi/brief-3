@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style-header-footer.css">
+    <link rel="stylesheet" href="style-contact.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5832cfab36.js" crossorigin="anonymous"></script>
+    <script src="script-contact.js"></script>
+</head>
+<body>
+    <!-- ****************** HEADER ***************** -->
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo-header"><img src="images/logo-racmilcar.png" alt="logo"></label>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="reservation.html">reservation</a></li>
+                <li><a class="active" href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ****************** END HEADER ***************** -->
+
+    
+    <div class="contact-section">
+        <br>
+        <h1>Contact Us</h1>
+        <br>
+
+        <form class="contact-form">
+            
+            <input type="text" id="name" class="contact-form-text" placeholder="Your name">
+            <input type="email" id="email" class="contact-form-text" placeholder="Your email">
+            <input type="text" id="phone" class="contact-form-text" placeholder="Your phone">
+            <textarea class="contact-form-text" id="message" placeholder="Your message"></textarea>
+            <center><input type="button" id="myBtn" class="contact-form-btn" value="send" onclick="xfunction()"></center>
+        </form>
+    </div>
+
+
+    <!-- ****************** FOOTER **********
+    ************ -->
+    <footer>
+        <div class="wrapper">
+            <div class="flex-container">
+
+                <div class="flex-item-left">
+                    <h2>Follow Us</h2>
+                    <center>
+                        <ul>
+                            <li><a href="#"><img src="icons/facebook.png" alt="facebook"></a></a></li>
+                            <li><a href="#"><img src="icons/instagram.png" alt="instagram"></a></a></li>
+                            <li><a href="#"><img src="icons/linkedin.png" alt="linkedin"></a></a></li>
+                            <li><a href="#"><img src="icons/Twitter.png" alt="Twitter"></a></a></li>
+                        </ul>
+                    </center>
+                    <h2>Contact Us</h2>
+                    <center>
+                        <ul>
+                            <li><a href="#"> <img src="icons/Email Icon.png" alt="email"></a></li>
+                            <li><a href="#"> <img src="icons/Fax Icon.png" alt="fax"></a></li>
+                            <li><a href="#"> <img src="icons/Phone Icon.png" alt="Phone"></a></li>
+                        </ul>
+                    </center>
+                </div>
+                <div class="flex-item-right">
+                    <center><img src="images/logo-racmilcar.png" alt="logo">
+                        <p>Copyright 2019 All Right Reserved By CLK LUXURY</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ****************** END FOOTER ********************** -->
+
+</body>
+
+</html>

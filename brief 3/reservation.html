@@ -4,12 +4,13 @@
     <link rel="stylesheet" href="style-header-footer.css">
     <link rel="stylesheet" href="style-resevation.css">
     <script src="script-reservation.js"></script>
-
+    <meta name="description" content="rental car website">
+    <meta name="keywords" content="rent car, rental cars, rent a car">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RESERVATION</title>
     <script src="https://kit.fontawesome.com/5832cfab36.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -25,13 +26,66 @@
         <ul>
             <li><a  href="home.html">home</a></li>
             <li><a  href="gallery.html">gallery</a></li>
-            <li><a class="active" href="reservation.html">resirvation</a></li>
+            <li><a class="active" href="reservation.html">reservation</a></li>
             <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
 </header>
 <!-- ****************** END HEADER ***************** -->
-<select name="type-du-véhicule" id="tv"></select>
+
+<form class="reservation-section">
+    <br>
+    <h1 >Reservation</h1>
+    <br>
+    <div class="center-form">
+    <div class="row">
+       <div class="label_row">
+         <label  for="fname">Vehicle Type</label>
+       </div>
+       <div class="input_row">
+         <select class="widht-select" name="type_du_véhicule" id="tv">
+           <option value="" selected="selected">Select the type of vehicle </option>
+         </select>
+       </div>
+     </div>
+     <div class="row">
+       <div class="label_row">
+         <label for="carburant">Fuel</label>
+       </div>
+       <div class="input_row">
+         <select class="widht-select" name="Carburant" id="Carburant">
+           <option value="" selected="selected">Select the type of Fuel </option>
+         </select>
+       </div>
+     </div>
+     <div class="row">
+       <div class="label_row">
+         <label  for="carburant">Gear Box</label>
+       </div>
+       <div class="input_row">
+         <select class="widht-select" name="bv" id="bv">
+           <option value="" selected="selected">Select the type of gearbox </option>
+         </select>
+       </div>
+     </div>
+     <div class="row">
+       <div class="label_row">
+         <label for="nbrjour">Number of days</label>
+       </div>
+       <div class="input_row">
+         <input class="widht-select" type="number" name="nbrjour" id="nbrjours" min="1" value="1">
+       </div>
+     </div>
+     <div class="blank"></div>
+     <div  class="row">
+     <center><input class="reservition-btn"  type="button" value="Reserve" id="myBtn" onclick="Calcule()" ></center>
+     </div>
+     <p style="color: white; font-size: large;" id="res"></p>
+     <p style="color: white; font-size: large;" id="Erreur"></p>
+    </div>
+   </form>
+  
+    
 <!-- ****************** FOOTER ********************** -->
 <footer>
     <div class="wrapper"> 
@@ -56,7 +110,7 @@
             </div>
             <div class="flex-item-right">
                 <center><img src="images/logo-racmilcar.png" alt="logo">
-                <p>Copyright 2019 All Right Reserved By CLK LUXURY</p></center>
+                <p>Copyright 2019 All Right Reserved By RACMILCAR</p></center>
             </div>
         </div> 
     </div>

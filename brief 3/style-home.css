@@ -52,6 +52,11 @@
     text-align: center; 
     color: #838b94;
  } 
+ @media screen and (max-width : 800px){
+     h1{
+         font-size: 25px;
+     }
+ }
  .background h3{
      /* opacity: 0; */
      color: #838b94;

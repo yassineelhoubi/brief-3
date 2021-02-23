@@ -3,13 +3,13 @@
 
 
 .container{
-    /* background-color:#f6f6f6 ; */
+    
 	background-image: url(images/surface-bois-couleur-blanc-gris_74190-8287.jpg)  ;
 }
 
 
 .row{
-	/* width: 100%; */
+	
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
